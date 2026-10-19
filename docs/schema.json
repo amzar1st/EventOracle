@@ -1,0 +1,120 @@
+{
+  "ctor": {
+    "params": [],
+    "kwparams": {}
+  },
+  "methods": {
+    "challenge": {
+      "params": [
+        [
+          "event_id",
+          "string"
+        ],
+        [
+          "reason",
+          "string"
+        ],
+        [
+          "sources_json",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "any",
+      "payable": false
+    },
+    "create_event": {
+      "params": [
+        [
+          "question",
+          "string"
+        ],
+        [
+          "criteria",
+          "string"
+        ],
+        [
+          "deadline",
+          "int"
+        ],
+        [
+          "sources_json",
+          "string"
+        ],
+        [
+          "challenge_seconds",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "finalize": {
+      "params": [
+        [
+          "event_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "any",
+      "payable": false
+    },
+    "get_count": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "int"
+    },
+    "get_event": {
+      "params": [
+        [
+          "event_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "get_resolution": {
+      "params": [
+        [
+          "event_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "recover_timeout": {
+      "params": [
+        [
+          "event_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "any",
+      "payable": false
+    },
+    "review": {
+      "params": [
+        [
+          "event_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "any",
+      "payable": false
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"name":"eventoracle","version":"0.1.0","private":true,"type":"module","scripts":{"build":"vite build","test":"python3 -m unittest discover -s tests -v && node --test tests/*.test.js"},"dependencies":{"genlayer-js":"1.1.8","vite":"6.1.0"},"devDependencies":{}}
