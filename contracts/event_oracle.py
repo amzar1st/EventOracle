@@ -51,7 +51,10 @@ def assess(question, sources):
                 'Ambiguity, incomplete lists, drafts, conflicting dates, missing timing => UNRESOLVED. '
                 'Return JSON only: {"vote":"YES|NO|UNRESOLVED","quote":"exact substring from source, max 600 chars","reason":"max 1000 chars"}. '
                 + json.dumps({'question': question['question'], 'criteria': question['criteria'], 'event_cutoff_unix': question['deadline'], 'source': text}))
-            answer = json.loads(gl.nondet.exec_prompt(prompt, response_format='json'))
+            answer = gl.nondet.exec_prompt(prompt, response_format='json')
+            if isinstance(answer, str):
+                answer = json.loads(answer)
+            assert isinstance(answer, dict), 'Expected structured assessment'
             assert answer['vote'] in ['YES', 'NO', 'UNRESOLVED']
             assert isinstance(answer['quote'], str) and len(answer['quote']) <= 600
             assert isinstance(answer['reason'], str) and 0 < len(answer['reason']) <= 1000
