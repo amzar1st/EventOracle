@@ -71,3 +71,16 @@ class Tests(unittest.TestCase):
         G.vm.run_nondet_unsafe=fail
         with self.assertRaises(RuntimeError):self.o.review(i)
         self.assertEqual(json.loads(self.o.get_event(i))['state'],'OPEN')
+
+    def test_native_sdk_json_dictionary(self):
+        G.nondet.web.get=lambda url:types.SimpleNamespace(status=200,body=b'Released on 2026-05-06.')
+        G.nondet.exec_prompt=lambda *a,**kw:{'vote':'YES','quote':'Released on 2026-05-06.','reason':'Direct dated proof before cutoff'}
+        r=m.assess({'question':'Question?','criteria':'Criteria','deadline':1792554248},[{'url':URL,'sha256':''}])
+        self.assertEqual(r['outcome'],'YES')
+        self.assertEqual(r['sources'][0]['status'],'VALID')
+
+    def test_invalid_native_json_is_unresolved(self):
+        G.nondet.web.get=lambda url:types.SimpleNamespace(status=200,body=b'Released on 2026-05-06.')
+        G.nondet.exec_prompt=lambda *a,**kw:[]
+        r=m.assess({'question':'Question?','criteria':'Criteria','deadline':1792554248},[{'url':URL,'sha256':''}])
+        self.assertEqual(r['outcome'],'UNRESOLVED')
