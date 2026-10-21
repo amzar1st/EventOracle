@@ -1,0 +1,87 @@
+{
+  "hash": "0xcb9eda482b8d7b22a9cea4bde65cae94c29547315dd7c628c5898577d228dd02",
+  "status": 7,
+  "statusName": "FINALIZED",
+  "from_address": "0x981F173A0d46C4Bb1BC72B01da22dF888ed35956",
+  "to_address": "0x343aCE1DF53b6E7E86a6934Ce9c4511F2416cC6D",
+  "consensus_data": {
+    "votes": {
+      "0x0B50B270Eba5D9B780272C4Cf4720260177e761D": "agree",
+      "0x8Ce1805d6970d54748dE7160b5b395dCC5c71F44": "agree",
+      "0xad7d13f269CeAd4379E64a1A3a0803a827e70B43": "agree",
+      "0xf1C7551292319EE334e2D8A24eAC108Bd4C63b21": "agree",
+      "0xf29b6947ed298d139FC2655DB15D868C9AbB3091": "agree"
+    },
+    "leader_receipt": [
+      {
+        "mode": "leader",
+        "vote": null,
+        "result": {
+          "raw": "AAA=",
+          "status": "return",
+          "payload": {
+            "raw": [
+              0
+            ],
+            "readable": "null"
+          }
+        },
+        "calldata": {
+          "base64": "Bg==",
+          "raw": [
+            6
+          ],
+          "readable": "{}"
+        },
+        "gas_used": 0,
+        "eq_outputs": {},
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "nondet_disagree": null,
+        "processing_time": 1017,
+        "execution_result": "SUCCESS",
+        "contract_state_hash": "cd7008e3fe108bbda6b8b415357b406a55d3ee054afcd9a02578f44ea43ab7c8",
+        "pending_transactions": []
+      },
+      {
+        "mode": "validator",
+        "vote": "agree",
+        "result": {
+          "raw": "AAA=",
+          "status": "return",
+          "payload": {
+            "raw": [
+              0
+            ],
+            "readable": "null"
+          }
+        },
+        "calldata": {
+          "base64": "Bg==",
+          "raw": [
+            6
+          ],
+          "readable": "{}"
+        },
+        "gas_used": 0,
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "nondet_disagree": null,
+        "processing_time": 1214,
+        "execution_result": "SUCCESS",
+        "contract_state_hash": "cd7008e3fe108bbda6b8b415357b406a55d3ee054afcd9a02578f44ea43ab7c8",
+        "pending_transactions": []
+      }
+    ]
+  }
+}

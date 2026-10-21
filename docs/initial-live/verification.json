@@ -1,0 +1,325 @@
+{
+  "address": "0x343aCE1DF53b6E7E86a6934Ce9c4511F2416cC6D",
+  "chainId": 61999,
+  "verifiedAt": "2026-10-21T03:46:57.373Z",
+  "transactions": [
+    {
+      "method": "deploy",
+      "args": [],
+      "hash": "0xcb9eda482b8d7b22a9cea4bde65cae94c29547315dd7c628c5898577d228dd02",
+      "signer": "0x981F173A0d46C4Bb1BC72B01da22dF888ed35956",
+      "createdAt": "2026-10-21T03:40:27.945767+00:00",
+      "success": true,
+      "receipt": {
+        "hash": "0xcb9eda482b8d7b22a9cea4bde65cae94c29547315dd7c628c5898577d228dd02",
+        "status": 7,
+        "statusName": "FINALIZED",
+        "from_address": "0x981F173A0d46C4Bb1BC72B01da22dF888ed35956",
+        "to_address": "0x343aCE1DF53b6E7E86a6934Ce9c4511F2416cC6D",
+        "consensus_data": {
+          "votes": {
+            "0x0B50B270Eba5D9B780272C4Cf4720260177e761D": "agree",
+            "0x8Ce1805d6970d54748dE7160b5b395dCC5c71F44": "agree",
+            "0xad7d13f269CeAd4379E64a1A3a0803a827e70B43": "agree",
+            "0xf1C7551292319EE334e2D8A24eAC108Bd4C63b21": "agree",
+            "0xf29b6947ed298d139FC2655DB15D868C9AbB3091": "agree"
+          },
+          "leader_receipt": [
+            {
+              "mode": "leader",
+              "vote": null,
+              "execution_result": "SUCCESS",
+              "result": {
+                "raw": "AAA=",
+                "status": "return",
+                "payload": {
+                  "raw": [
+                    0
+                  ],
+                  "readable": "null"
+                }
+              },
+              "genvm_result": {
+                "error_code": null,
+                "error_description": null,
+                "stderr": ""
+              },
+              "contract_state_hash": "cd7008e3fe108bbda6b8b415357b406a55d3ee054afcd9a02578f44ea43ab7c8"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution_result": "SUCCESS",
+              "result": {
+                "raw": "AAA=",
+                "status": "return",
+                "payload": {
+                  "raw": [
+                    0
+                  ],
+                  "readable": "null"
+                }
+              },
+              "genvm_result": {
+                "error_code": null,
+                "error_description": null,
+                "stderr": ""
+              },
+              "contract_state_hash": "cd7008e3fe108bbda6b8b415357b406a55d3ee054afcd9a02578f44ea43ab7c8"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "create_event",
+      "args": [
+        "Was GenLayerJS v1.1.8 publicly released before the event cutoff?",
+        "Resolve YES only if the official genlayerlabs/genlayer-js GitHub release metadata has tag_name v1.1.8, draft false, prerelease false, and published_at no later than the event cutoff. Resolve NO only from authoritative dated disproof; missing or unavailable data is UNRESOLVED.",
+        "1792554248",
+        "[{\"url\":\"https://api.github.com/repos/genlayerlabs/genlayer-js/releases/tags/v1.1.8\",\"sha256\":\"\"}]",
+        "600"
+      ],
+      "hash": "0x264bc44e1eb8dedaab0d26c42577c45ce9911cd6948336fd128654bdb43e7d15",
+      "signer": "0x981F173A0d46C4Bb1BC72B01da22dF888ed35956",
+      "createdAt": "2026-10-21T03:42:09.731154+00:00",
+      "success": true,
+      "receipt": {
+        "hash": "0x264bc44e1eb8dedaab0d26c42577c45ce9911cd6948336fd128654bdb43e7d15",
+        "status": 7,
+        "statusName": "FINALIZED",
+        "from_address": "0x981F173A0d46C4Bb1BC72B01da22dF888ed35956",
+        "to_address": "0x343aCE1DF53b6E7E86a6934Ce9c4511F2416cC6D",
+        "consensus_data": {
+          "votes": {
+            "0x0B50B270Eba5D9B780272C4Cf4720260177e761D": "idle",
+            "0x6a4179A851B3747A458baD2f089AB2EeFE0eBbAb": "agree",
+            "0x7bf4Ea55363bbe73A4dd5b3900bf03c978A63b6e": "agree",
+            "0x892C437da9b9CA0b6017B6f046F58E3526B46ec6": "agree",
+            "0xb0925568bFbCF00aADBcA053E6D0E1628ff3d530": "agree"
+          },
+          "leader_receipt": [
+            {
+              "mode": "leader",
+              "vote": null,
+              "execution_result": "SUCCESS",
+              "result": {
+                "raw": "AAwx",
+                "status": "return",
+                "payload": {
+                  "raw": [
+                    12,
+                    49
+                  ],
+                  "readable": "\"1\""
+                }
+              },
+              "genvm_result": {
+                "error_code": null,
+                "error_description": null,
+                "stderr": ""
+              },
+              "contract_state_hash": "9c238e2697d9ca3a93698c0256a05995bc53790ce2f22b7bb4764ddcadf558d5"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution_result": "SUCCESS",
+              "result": {
+                "raw": "AAwx",
+                "status": "return",
+                "payload": {
+                  "raw": [
+                    12,
+                    49
+                  ],
+                  "readable": "\"1\""
+                }
+              },
+              "genvm_result": {
+                "error_code": null,
+                "error_description": null,
+                "stderr": ""
+              },
+              "contract_state_hash": "9c238e2697d9ca3a93698c0256a05995bc53790ce2f22b7bb4764ddcadf558d5"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "review",
+      "args": [
+        "1"
+      ],
+      "hash": "0x608af8a4880027f4bfebbfd17a6dee4b714eb9529b289bd22c70ec967203ba15",
+      "signer": "0x981F173A0d46C4Bb1BC72B01da22dF888ed35956",
+      "createdAt": "2026-10-21T03:43:58.548815+00:00",
+      "success": false,
+      "error": "Finalized transaction did not execute successfully",
+      "receipt": {
+        "hash": "0x608af8a4880027f4bfebbfd17a6dee4b714eb9529b289bd22c70ec967203ba15",
+        "status": 7,
+        "statusName": "FINALIZED",
+        "from_address": "0x981F173A0d46C4Bb1BC72B01da22dF888ed35956",
+        "to_address": "0x343aCE1DF53b6E7E86a6934Ce9c4511F2416cC6D",
+        "consensus_data": {
+          "votes": {
+            "0x17ac0CaefB18205c737e64ee582c9245A28ca1f9": "agree",
+            "0x5Bbbd7cdD63c0ba7f088038Cb049bDDAbE4F6fd1": "idle",
+            "0x7bf4Ea55363bbe73A4dd5b3900bf03c978A63b6e": "agree",
+            "0x892C437da9b9CA0b6017B6f046F58E3526B46ec6": "idle",
+            "0xa21bc502E3578E4b3039be8c59a257198f7c3f19": "agree"
+          },
+          "leader_receipt": [
+            {
+              "mode": "leader",
+              "vote": null,
+              "execution_result": "ERROR",
+              "result": {
+                "raw": "AmV4aXRfY29kZSAx",
+                "status": "contract_error",
+                "payload": "exit_code 1"
+              },
+              "genvm_result": {
+                "error_code": null,
+                "error_description": null,
+                "stderr": "Traceback (most recent call last):\n  File \"/py/libs/_genlayer_runner.py\", line 180, in <module>\n    _handle_main()\n    ~~~~~~~~~~~~^^\n  File \"/py/libs/_genlayer_runner.py\", line 170, in _handle_main\n    _give_result(\n    ~~~~~~~~~~~~^\n    \tlambda: meth2call(contract_instance, *cd.get('args', []), **cd.get('kwargs', {}))\n     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/py/libs/_genlayer_runner.py\", line 65, in _give_result\n    res = res_fn()\n  File \"/py/libs/_genlayer_runner.py\", line 171, in <lambda>\n    lambda: meth2call(contract_instance, *cd.get('args', []), **cd.get('kwargs', {}))\n            ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/contract.py\", line 109, in review\n    assert q['review_after'] <= now() < q['expires'], 'Outside review period'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Outside review period\n"
+              },
+              "contract_state_hash": "9c238e2697d9ca3a93698c0256a05995bc53790ce2f22b7bb4764ddcadf558d5"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution_result": "ERROR",
+              "result": {
+                "raw": "AmV4aXRfY29kZSAx",
+                "status": "contract_error",
+                "payload": "exit_code 1"
+              },
+              "genvm_result": {
+                "error_code": null,
+                "error_description": null,
+                "stderr": "Traceback (most recent call last):\n  File \"/py/libs/_genlayer_runner.py\", line 180, in <module>\n    _handle_main()\n    ~~~~~~~~~~~~^^\n  File \"/py/libs/_genlayer_runner.py\", line 170, in _handle_main\n    _give_result(\n    ~~~~~~~~~~~~^\n    \tlambda: meth2call(contract_instance, *cd.get('args', []), **cd.get('kwargs', {}))\n     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/py/libs/_genlayer_runner.py\", line 65, in _give_result\n    res = res_fn()\n  File \"/py/libs/_genlayer_runner.py\", line 171, in <lambda>\n    lambda: meth2call(contract_instance, *cd.get('args', []), **cd.get('kwargs', {}))\n            ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/contract.py\", line 109, in review\n    assert q['review_after'] <= now() < q['expires'], 'Outside review period'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Outside review period\n"
+              },
+              "contract_state_hash": "9c238e2697d9ca3a93698c0256a05995bc53790ce2f22b7bb4764ddcadf558d5"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "review",
+      "args": [
+        "1"
+      ],
+      "hash": "0x0e0fefaf4b816e96169444d9025cba751847d9cc332dbdc6b9315f3c349ae457",
+      "signer": "0x981F173A0d46C4Bb1BC72B01da22dF888ed35956",
+      "createdAt": "2026-10-21T03:44:56.882171+00:00",
+      "success": false,
+      "error": "Transaction is not finalized",
+      "receipt": {
+        "hash": "0x0e0fefaf4b816e96169444d9025cba751847d9cc332dbdc6b9315f3c349ae457",
+        "status": 5,
+        "statusName": "ACCEPTED",
+        "from_address": "0x981F173A0d46C4Bb1BC72B01da22dF888ed35956",
+        "to_address": "0x343aCE1DF53b6E7E86a6934Ce9c4511F2416cC6D",
+        "consensus_data": {
+          "votes": {
+            "0x0B50B270Eba5D9B780272C4Cf4720260177e761D": "disagree",
+            "0x6a4179A851B3747A458baD2f089AB2EeFE0eBbAb": "agree",
+            "0x8Ce1805d6970d54748dE7160b5b395dCC5c71F44": "agree",
+            "0xad7d13f269CeAd4379E64a1A3a0803a827e70B43": "agree",
+            "0xf1C7551292319EE334e2D8A24eAC108Bd4C63b21": "disagree"
+          },
+          "leader_receipt": [
+            {
+              "mode": "leader",
+              "vote": null,
+              "execution_result": "SUCCESS",
+              "result": {
+                "raw": "AAA=",
+                "status": "return",
+                "payload": {
+                  "raw": [
+                    0
+                  ],
+                  "readable": "null"
+                }
+              },
+              "genvm_result": {
+                "error_code": null,
+                "error_description": null,
+                "stderr": ""
+              },
+              "contract_state_hash": "892c4e92d1daacaae036d117215c8f0c38bb3c6673dba174bf5848571ebf5e23"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution_result": "SUCCESS",
+              "result": {
+                "raw": "AAA=",
+                "status": "return",
+                "payload": {
+                  "raw": [
+                    0
+                  ],
+                  "readable": "null"
+                }
+              },
+              "genvm_result": {
+                "error_code": null,
+                "error_description": null,
+                "stderr": ""
+              },
+              "contract_state_hash": "892c4e92d1daacaae036d117215c8f0c38bb3c6673dba174bf5848571ebf5e23"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "events": [
+    {
+      "challenge": null,
+      "challenge_seconds": 600,
+      "challenge_until": 1792554896,
+      "challenged": false,
+      "creator": "0x981F173A0d46C4Bb1BC72B01da22dF888ed35956",
+      "criteria": "Resolve YES only if the official genlayerlabs/genlayer-js GitHub release metadata has tag_name v1.1.8, draft false, prerelease false, and published_at no later than the event cutoff. Resolve NO only from authoritative dated disproof; missing or unavailable data is UNRESOLVED.",
+      "deadline": 1792554248,
+      "expires": 1793763848,
+      "history": [
+        {
+          "at": 1792554296,
+          "result": {
+            "conflict": false,
+            "outcome": "UNRESOLVED",
+            "sources": [
+              {
+                "fingerprint": "35071c80f134cde5716d6a6d9bd80806aeba4e6089a81f3f9c546e024b4918b9",
+                "quote": "",
+                "reason": "Unavailable, invalid commitment, oversized content, or invalid assessment",
+                "status": "INVALID",
+                "url": "https://api.github.com/repos/genlayerlabs/genlayer-js/releases/tags/v1.1.8",
+                "vote": "UNRESOLVED"
+              }
+            ]
+          }
+        }
+      ],
+      "id": "1",
+      "outcome": "UNRESOLVED",
+      "question": "Was GenLayerJS v1.1.8 publicly released before the event cutoff?",
+      "review_after": 1792554248,
+      "sources": [
+        {
+          "sha256": "",
+          "url": "https://api.github.com/repos/genlayerlabs/genlayer-js/releases/tags/v1.1.8"
+        }
+      ],
+      "state": "PROPOSED"
+    }
+  ]
+}

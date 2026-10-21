@@ -1,0 +1,48 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> eventoracle@0.1.0 test
+> python3 -m unittest discover -s tests -v && node --test tests/*.test.js
+
+test_challenge_and_second_review (test_contract.Tests.test_challenge_and_second_review) ... ok
+test_conflicting_evidence (test_contract.Tests.test_conflicting_evidence) ... ok
+test_failed_consensus_leaves_retry_possible (test_contract.Tests.test_failed_consensus_leaves_retry_possible) ... ok
+test_hash_mismatch_unresolved (test_contract.Tests.test_hash_mismatch_unresolved) ... ok
+test_immutable_final_and_boundary (test_contract.Tests.test_immutable_final_and_boundary) ... ok
+test_independent_fingerprint_comparison (test_contract.Tests.test_independent_fingerprint_comparison) ... ok
+test_invalid_deadlines (test_contract.Tests.test_invalid_deadlines) ... ok
+test_invalid_native_json_is_unresolved (test_contract.Tests.test_invalid_native_json_is_unresolved) ... ok
+test_invalid_sources (test_contract.Tests.test_invalid_sources) ... ok
+test_native_sdk_json_dictionary (test_contract.Tests.test_native_sdk_json_dictionary) ... ok
+test_timeout (test_contract.Tests.test_timeout) ... ok
+test_unavailable_source_does_not_veto_good (test_contract.Tests.test_unavailable_source_does_not_veto_good) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.001s
+
+OK
+✔ finalized revert is not success (2.233473ms)
+✔ pending return is not success (0.315539ms)
+✔ missing execution proof fails closed (0.209798ms)
+✔ finalized successful execution (0.270418ms)
+✔ actual StudioNet numeric finalized receipt passes (0.33219ms)
+✔ StudioNet finalized error fails (0.25278ms)
+✔ leader result error fails despite SUCCESS marker (0.189062ms)
+✔ missing leader fails closed (0.513126ms)
+✔ validator error fails closed (0.475366ms)
+✔ quorum-stopped idle validator is not an execution revert (0.403327ms)
+✔ real genlayer-js write sends encoded review to EIP-1193 provider for chain 61999 (7.782098ms)
+✔ absent provider clearly rejected (2.321566ms)
+✔ correct StudioNet provider connects without installing Snap (3.130242ms)
+✔ wrong chain switches to 61999 (0.534146ms)
+✔ unknown chain adds exact StudioNet then switches (1.031149ms)
+✔ rejected switch is not swallowed (0.207562ms)
+✔ account change is blocked (0.286123ms)
+✔ network change is blocked (0.249162ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 389.826917

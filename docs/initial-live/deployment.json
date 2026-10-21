@@ -1,0 +1,12 @@
+{
+  "address": "0x343aCE1DF53b6E7E86a6934Ce9c4511F2416cC6D",
+  "chainId": 61999,
+  "rpc": "https://studio.genlayer.com/api",
+  "deploymentTx": "0xcb9eda482b8d7b22a9cea4bde65cae94c29547315dd7c628c5898577d228dd02",
+  "deployer": "0x981F173A0d46C4Bb1BC72B01da22dF888ed35956",
+  "origin": "GenLayer Studio built-in account; deployment submitted through Studio UI in Normal (Full Consensus) mode",
+  "sourceSha256": "16411f1c6f7c38653475e59322a6c86890da141042e3a0e44369d3a8f7aa21ff",
+  "sourceCommit": "024a22644ff16e7d10fec523d343c9c1ef2afca1",
+  "explorer": "https://explorer-studio.genlayer.com/address/0x343aCE1DF53b6E7E86a6934Ce9c4511F2416cC6D",
+  "verifiedAt": "2026-10-21T03:41:37.696Z"
+}

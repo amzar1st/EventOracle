@@ -3,3 +3,10 @@ test('finalized revert is not success',()=>assert.throws(()=>assertSuccessful({s
 test('pending return is not success',()=>assert.throws(()=>assertSuccessful({statusName:'ACCEPTED',txExecutionResultName:'FINISHED_WITH_RETURN'})));
 test('missing execution proof fails closed',()=>assert.throws(()=>assertSuccessful({statusName:'FINALIZED'})));
 test('finalized successful execution',()=>assert.doesNotThrow(()=>assertSuccessful({statusName:'FINALIZED',txExecutionResultName:'FINISHED_WITH_RETURN'})));
+const leader = {mode:'leader',execution_result:'SUCCESS',result:{status:'return'}};
+test('actual StudioNet numeric finalized receipt passes',()=>assert.doesNotThrow(()=>assertSuccessful({status:7,consensus_data:{leader_receipt:[leader]}})));
+test('StudioNet finalized error fails',()=>assert.throws(()=>assertSuccessful({status:7,consensus_data:{leader_receipt:[{...leader,execution_result:'ERROR'}]}})));
+test('leader result error fails despite SUCCESS marker',()=>assert.throws(()=>assertSuccessful({status:7,consensus_data:{leader_receipt:[{...leader,result:{status:'error'}}]}})));
+test('missing leader fails closed',()=>assert.throws(()=>assertSuccessful({status:7,consensus_data:{leader_receipt:[]}})));
+test('validator error fails closed',()=>assert.throws(()=>assertSuccessful({status:7,consensus_data:{leader_receipt:[leader,{mode:'validator',execution_result:'ERROR'}]}})));
+test('quorum-stopped idle validator is not an execution revert',()=>assert.doesNotThrow(()=>assertSuccessful({status:7,consensus_data:{leader_receipt:[leader,{mode:'validator',vote:'idle',execution_result:'ERROR',genvm_result:{error_code:'CONSENSUS_VALIDATOR_QUORUM_REACHED'}}]}})));

@@ -1,0 +1,13 @@
+{
+  "url": "https://eventoracle-amzar.tinymule33.chatgpt.site",
+  "projectId": "appgprj_6ad5bcea72988191aafc487ce3e4479a",
+  "deploymentId": "appgdep_6ad838d7acbc81919d320e32cce6c4b3",
+  "version": 2,
+  "nativeDeploymentStatus": "succeeded",
+  "accessMode": "public",
+  "defaultContract": "0xEa6703e6508D61a86ce904e87BAe448880Bb5E5C",
+  "frontendBrowserVerified": false,
+  "actualMetaMaskSigningVerified": false,
+  "reason": "Hosted browser navigation timed out; browser session lost. Direct HTTP check from executor returned 403. Native Sites status is active/public.",
+  "verifiedOn": "2026-10-21"
+}

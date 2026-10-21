@@ -1,0 +1,76 @@
+{
+  "method": "create_event",
+  "args": [
+    "Was GenLayerJS v1.1.8 publicly released before the event cutoff?",
+    "Resolve YES only if the official genlayerlabs/genlayer-js GitHub release metadata has tag_name v1.1.8, draft false, prerelease false, and published_at no later than the event cutoff. Resolve NO only from authoritative dated disproof; missing or unavailable data is UNRESOLVED.",
+    "1792554248",
+    "[{\"url\":\"https://api.github.com/repos/genlayerlabs/genlayer-js/releases/tags/v1.1.8\",\"sha256\":\"\"}]",
+    "600"
+  ],
+  "hash": "0x264bc44e1eb8dedaab0d26c42577c45ce9911cd6948336fd128654bdb43e7d15",
+  "signer": "0x981F173A0d46C4Bb1BC72B01da22dF888ed35956",
+  "createdAt": "2026-10-21T03:42:09.731154+00:00",
+  "success": true,
+  "receipt": {
+    "hash": "0x264bc44e1eb8dedaab0d26c42577c45ce9911cd6948336fd128654bdb43e7d15",
+    "status": 7,
+    "statusName": "FINALIZED",
+    "from_address": "0x981F173A0d46C4Bb1BC72B01da22dF888ed35956",
+    "to_address": "0x343aCE1DF53b6E7E86a6934Ce9c4511F2416cC6D",
+    "consensus_data": {
+      "votes": {
+        "0x0B50B270Eba5D9B780272C4Cf4720260177e761D": "idle",
+        "0x6a4179A851B3747A458baD2f089AB2EeFE0eBbAb": "agree",
+        "0x7bf4Ea55363bbe73A4dd5b3900bf03c978A63b6e": "agree",
+        "0x892C437da9b9CA0b6017B6f046F58E3526B46ec6": "agree",
+        "0xb0925568bFbCF00aADBcA053E6D0E1628ff3d530": "agree"
+      },
+      "leader_receipt": [
+        {
+          "mode": "leader",
+          "vote": null,
+          "execution_result": "SUCCESS",
+          "result": {
+            "raw": "AAwx",
+            "status": "return",
+            "payload": {
+              "raw": [
+                12,
+                49
+              ],
+              "readable": "\"1\""
+            }
+          },
+          "genvm_result": {
+            "error_code": null,
+            "error_description": null,
+            "stderr": ""
+          },
+          "contract_state_hash": "9c238e2697d9ca3a93698c0256a05995bc53790ce2f22b7bb4764ddcadf558d5"
+        },
+        {
+          "mode": "validator",
+          "vote": "agree",
+          "execution_result": "SUCCESS",
+          "result": {
+            "raw": "AAwx",
+            "status": "return",
+            "payload": {
+              "raw": [
+                12,
+                49
+              ],
+              "readable": "\"1\""
+            }
+          },
+          "genvm_result": {
+            "error_code": null,
+            "error_description": null,
+            "stderr": ""
+          },
+          "contract_state_hash": "9c238e2697d9ca3a93698c0256a05995bc53790ce2f22b7bb4764ddcadf558d5"
+        }
+      ]
+    }
+  }
+}
