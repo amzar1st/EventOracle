@@ -1,0 +1,15 @@
+{
+  "id": "appgdep_6ad9f18461c08191a2cd47b376ae92b3",
+  "project_id": "appgprj_6ad5bcea72988191aafc487ce3e4479a",
+  "title": "EventOracle",
+  "version_id": "appgprj_6ad5bcea72988191aafc487ce3e4479a~appgver_97cf536921f88191b46fd236220fa599",
+  "type": "publish",
+  "status": "succeeded",
+  "url": "https://eventoracle-amzar.tinymule33.chatgpt.site",
+  "has_mcp": false,
+  "screenshot_asset_pointer": null,
+  "provider_deployment_id": "site---6ad5bcea72988191aafc487ce3e4479a",
+  "failure_message": null,
+  "env_set_revision": 0,
+  "updated_at": "2026-10-22T11:20:56.735437+00:00"
+}

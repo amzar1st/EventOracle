@@ -1,0 +1,12 @@
+{
+  "verifiedAt": "2026-10-22T11:10:27.001Z",
+  "eventId": "3",
+  "chainId": 61999,
+  "contract": "0xEa6703e6508D61a86ce904e87BAe448880Bb5E5C",
+  "check": "Live provisional event rejected by consumer SDK",
+  "passed": true,
+  "error": {
+    "code": "NOT_FINAL",
+    "message": "Event is provisional; finalized data is required"
+  }
+}

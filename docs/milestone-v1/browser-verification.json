@@ -23,9 +23,38 @@
     }
   ],
   "limitations": [
-    "Browser file chooser stalled and browser session was lost; native file upload and download were not completed in browser QA.",
-    "Paste/export/live recheck were observed in preview; production deployment is verified separately through the hosting service.",
-    "No browser screenshot was recovered.",
-    "The existing MetaMask signing limitation is unchanged."
-  ]
+    "Initial preview file-picker and screenshot checks were incomplete; follow-up production results below supersede these for imported shared files and screenshot capture."
+  ],
+  "followup": {
+    "date": "2026-10-22",
+    "environment": "Public production website https://eventoracle-amzar.tinymule33.chatgpt.site/",
+    "checks": [
+      {
+        "check": "public site opened; default contract/source pin; live event count 3",
+        "passed": true
+      },
+      {
+        "check": "event 3 retrieved as FINAL YES with get_resolution cross-check",
+        "passed": true
+      },
+      {
+        "check": "verified event 2 export triggered browser download and returned a path",
+        "passed": true
+      },
+      {
+        "check": "actual JSON file input imports event 2 fixture and online verification succeeds",
+        "passed": true
+      },
+      {
+        "check": "actual JSON file input imports fresh event 3 bundle and online verification succeeds",
+        "passed": true,
+        "visibleResult": "Verified against StudioNet \u00b7 event 3 \u00b7 YES \u00b7 source, record and receipt match."
+      }
+    ],
+    "screenshot": "studio/public-verified.jpg",
+    "limitations": [
+      "The browser-managed download path was unavailable to the shared filesystem and could not be re-imported. Actual file import was independently verified with confirmed shared JSON files.",
+      "Real MetaMask signing remains untested; the full built-in Studio signing workflow is verified separately."
+    ]
+  }
 }

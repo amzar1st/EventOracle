@@ -2,7 +2,7 @@
 
 Accepted baseline: GitHub commit `9ed0fb83996d809a038d121df559fafa8fe9a6af`.
 
-This milestone adds a reusable developer integration and a new frontend workflow. It does not resubmit the original deployment, rename the project, claim new validator transactions, or modify accepted on-chain history.
+This milestone adds a reusable developer integration and a new frontend workflow. It does not resubmit the original deployment, rename the project, or modify accepted on-chain history. A supplemental fresh Studio workflow now contributes five new successful write transactions as live integration evidence.
 
 ## Documented delta
 
@@ -43,7 +43,7 @@ npm run verify:milestone
 node examples/consumer.mjs 2
 ```
 
-The live command rechecks existing accepted records. Their original finalization hashes are supporting anchors, **not new milestone transactions**.
+The initial live command rechecks accepted records; their original finalization hashes are supporting anchors. A separate [fresh Studio workflow](milestone-v1/studio/README.md) adds five new successful transactions and verifies event 3 through the new SDK.
 
 ## Evidence
 
@@ -53,7 +53,8 @@ The live command rechecks existing accepted records. Their original finalization
 - [Intentionally invalid rehashed record](milestone-v1/intentionally-invalid-rehashed-forgery.json)
 - [New test results](milestone-v1/test-results.txt)
 - [Build results](milestone-v1/build-results.txt)
-- [Browser verification](milestone-v1/browser-verification.json): live example, online recheck and tamper rejection observed in preview. The native file chooser stalled; upload/download browser checks and screenshot capture remain incomplete.
+- [Browser verification](milestone-v1/browser-verification.json): initial preview checks, followed by public production checks and actual JSON file imports.
+- [Fresh Studio workflow](milestone-v1/studio/README.md): five finalized successful transactions, challenged event 3, new consumer verification and provisional rejection.
 
 ## Scope and limitations
 

@@ -89,3 +89,10 @@ The first instance at `0x343aCE1DF53b6E7E86a6934Ce9c4511F2416cC6D` is not the fr
 ## Milestone v1: consumer integration (2026-10-22)
 
 The accepted deployment is unchanged. New read-only SDK verification exports/rechecks finalized YES and UNRESOLVED records, rejects a rehashed forged record and wrong-event receipt, checks the unresolved guard, and discovers the successful finalization transaction. All six live checks passed. See [the documented delta](MILESTONE_V1.md), [live report](milestone-v1/live-verification.json), [60-test results](milestone-v1/test-results.txt), and [browser results and limitations](milestone-v1/browser-verification.json). The original finalization transactions are anchors for the new consumer workflow, not new milestone transactions.
+
+
+## Fresh built-in-account workflow (2026-10-22)
+
+Completed a new create → review → challenge → re-review → finalize workflow for event 3 through the Studio UI with its built-in account, Normal (Full Consensus), and Simulation Mode off. All five transactions finalized with successful execution. Event 3 is FINAL / YES with two review reports. The new SDK rejected the provisional state, then exported/rechecked its final record and receipt and rejected a rehashed forgery. See [reproducible evidence and receipt links](milestone-v1/studio/README.md).
+
+The public production frontend was accessible in the browser during this run and read event 3; file imports of events 2/3 were exercised. This supersedes the earlier production-access limitation for this run. A browser-managed downloaded file could not be recovered from its returned path; a confirmed shared JSON fixture imported successfully instead. MetaMask extension signing remains untested; Studio built-in signing is independently verified.
