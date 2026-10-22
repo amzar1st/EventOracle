@@ -1,0 +1,78 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> eventoracle@0.2.0 test
+> python3 -m unittest discover -s tests -v && node --test tests/*.test.js
+
+test_challenge_and_second_review (test_contract.Tests.test_challenge_and_second_review) ... ok
+test_conflicting_evidence (test_contract.Tests.test_conflicting_evidence) ... ok
+test_failed_consensus_leaves_retry_possible (test_contract.Tests.test_failed_consensus_leaves_retry_possible) ... ok
+test_hash_mismatch_unresolved (test_contract.Tests.test_hash_mismatch_unresolved) ... ok
+test_immutable_final_and_boundary (test_contract.Tests.test_immutable_final_and_boundary) ... ok
+test_independent_fingerprint_comparison (test_contract.Tests.test_independent_fingerprint_comparison) ... ok
+test_invalid_deadlines (test_contract.Tests.test_invalid_deadlines) ... ok
+test_invalid_native_json_is_unresolved (test_contract.Tests.test_invalid_native_json_is_unresolved) ... ok
+test_invalid_sources (test_contract.Tests.test_invalid_sources) ... ok
+test_native_sdk_json_dictionary (test_contract.Tests.test_native_sdk_json_dictionary) ... ok
+test_timeout (test_contract.Tests.test_timeout) ... ok
+test_unavailable_source_does_not_veto_good (test_contract.Tests.test_unavailable_source_does_not_veto_good) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.002s
+
+OK
+✔ SDK finalized reads pin source before and after and explicitly use LATEST_FINAL (5.685127ms)
+✔ YES and NO map to booleans; UNRESOLVED cannot silently become false or true (0.427462ms)
+✔ UNRESOLVED can be exported and independently rechecked without a binary decision (6.089934ms)
+✔ provisional YES is not consumable (0.739963ms)
+✔ event namespace is checked (0.448945ms)
+✔ noncanonical event IDs rejected before RPC calls (1.292182ms)
+✔ source mismatch is rejected (0.938872ms)
+✔ source changing between reads is rejected (0.610237ms)
+✔ configured wrong network rejected (0.404298ms)
+✔ RPC chain identity is checked independently (0.38599ms)
+✔ get_resolution disagreement rejected (0.425119ms)
+✔ portable bundle round trip verifies record, source, receipt and chain identity (1.756831ms)
+✔ edited criteria fail local digest verification (1.938859ms)
+✔ attacker recomputing every digest still fails independent chain reread (2.324464ms)
+✔ edited evidence fingerprint with recomputed hashes still fails online (2.138024ms)
+✔ bundle for another contract cannot be accepted under this deployment pin (1.63019ms)
+✔ self-declared alternative source hash is rejected (1.700496ms)
+✔ receipt for another event rejected (0.839612ms)
+✔ receipt for another contract rejected (0.880544ms)
+✔ nonfinal receipt rejected (1.094065ms)
+✔ finalized revert rejected (0.904359ms)
+✔ RPC substituting another transaction hash rejected (0.895045ms)
+✔ review transaction cannot stand in for finalization (0.801525ms)
+✔ timeout recovery receipt accepted only for a timeout record (2.228961ms)
+✔ garbled calldata fails closed (0.760128ms)
+✔ discovery skips unrelated and failed receipts and verifies chosen receipt independently (1.281135ms)
+✔ RPC failure cannot degrade to locally trusting an imported file (1.562259ms)
+✔ oversized bundle refused (0.453021ms)
+✔ malformed JSON and unknown fields refused (1.331752ms)
+✔ canonical record hash ignores key order and is a SHA-256 digest (0.223226ms)
+✔ finalized revert is not success (1.232623ms)
+✔ pending return is not success (0.165649ms)
+✔ missing execution proof fails closed (0.135013ms)
+✔ finalized successful execution (0.280411ms)
+✔ actual StudioNet numeric finalized receipt passes (0.204227ms)
+✔ StudioNet finalized error fails (0.140902ms)
+✔ leader result error fails despite SUCCESS marker (0.128323ms)
+✔ missing leader fails closed (0.161964ms)
+✔ validator error fails closed (1.364396ms)
+✔ quorum-stopped idle validator is not an execution revert (0.220051ms)
+✔ real genlayer-js write sends encoded review to EIP-1193 provider for chain 61999 (7.094566ms)
+✔ absent provider clearly rejected (1.191792ms)
+✔ correct StudioNet provider connects without installing Snap (2.363093ms)
+✔ wrong chain switches to 61999 (0.533342ms)
+✔ unknown chain adds exact StudioNet then switches (0.496686ms)
+✔ rejected switch is not swallowed (0.510057ms)
+✔ account change is blocked (0.207012ms)
+✔ network change is blocked (0.196605ms)
+ℹ tests 48
+ℹ suites 0
+ℹ pass 48
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 339.165764

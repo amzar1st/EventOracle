@@ -84,3 +84,8 @@ The collection scripts are read-only on-chain and write refreshed evidence local
 ## Superseded first deployment
 
 The first instance at `0x343aCE1DF53b6E7E86a6934Ce9c4511F2416cC6D` is not the frontend default. An early review reverted before cutoff. Subsequent live testing exposed double-parsing of native JSON-mode SDK output, which could make valid evidence INVALID. The current source commit fixes that bug and regression-tests the dictionary return type. Preliminary receipts remain under `initial-live/` and are not counted as current successful workflow evidence.
+
+
+## Milestone v1: consumer integration (2026-10-22)
+
+The accepted deployment is unchanged. New read-only SDK verification exports/rechecks finalized YES and UNRESOLVED records, rejects a rehashed forged record and wrong-event receipt, checks the unresolved guard, and discovers the successful finalization transaction. All six live checks passed. See [the documented delta](MILESTONE_V1.md), [live report](milestone-v1/live-verification.json), [60-test results](milestone-v1/test-results.txt), and [browser results and limitations](milestone-v1/browser-verification.json). The original finalization transactions are anchors for the new consumer workflow, not new milestone transactions.

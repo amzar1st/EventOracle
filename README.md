@@ -2,6 +2,12 @@
 
 An evidence-grounded GenLayer oracle for real-world YES/NO questions. Users lock resolution criteria, an event cutoff, and public source URLs. GenLayer validators independently fetch evidence, assess dated facts, compare fingerprints and source-level decisions, and audit decisive quotations. Results remain provisional until the challenge window closes.
 
+## Milestone v1: Consumer SDK and portable resolution records
+
+New progress beyond the accepted project: an account-free consumer SDK, versioned JSON export/import, source and chain pinning, finalized-record/receipt binding, canonical hashes, online tamper detection and an explicit UNRESOLVED decision guard. The website now exposes export and independent RPC recheck controls.
+
+See [the documented milestone delta](docs/MILESTONE_V1.md), [the SDK guide](sdk/README.md), [new live verification evidence](docs/milestone-v1/live-verification.json), and [the consumer example](examples/consumer.mjs). Run `npm run verify:milestone` to reproduce read-only checks. These are new integrations against the accepted deployment; its original transactions are not counted as new milestone transactions.
+
 ## Live application
 
 - Frontend: https://eventoracle-amzar.tinymule33.chatgpt.site
@@ -34,7 +40,7 @@ npm test
 npm run build
 ```
 
-The suite contains 12 Python behavior/regression tests and 18 JavaScript receipt, wallet, and real-SDK/provider integration tests. The Python harness does not replace live GenVM execution. The SDK/provider test uses controlled fixtures and is not an installed MetaMask test.
+The suite contains 12 Python behavior/regression tests and 48 JavaScript tests, including 30 new consumer SDK tests (60 total). The Python harness does not replace live GenVM execution. The SDK/provider test uses controlled fixtures and is not an installed MetaMask test.
 
 Re-fetch current deployment and transaction evidence without submitting transactions:
 

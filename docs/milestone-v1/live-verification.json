@@ -1,0 +1,59 @@
+{
+  "milestone": "Consumer SDK and portable resolution verification",
+  "acceptedBaseCommit": "9ed0fb83996d809a038d121df559fafa8fe9a6af",
+  "chainId": 61999,
+  "contract": "0xEa6703e6508D61a86ce904e87BAe448880Bb5E5C",
+  "sourceSha256": "bb13b4c1278f211256473eeedbe5fca68818cf821637a17ce00a030b0d2a8ee9",
+  "readOnly": true,
+  "startedAt": "2026-10-22T08:09:59.811Z",
+  "checks": [
+    {
+      "check": "export-and-independent-RPC-recheck",
+      "eventId": "2",
+      "resolution": "YES",
+      "recordHash": "62e105e672f7259cfa1aba7bb231292d493b3acfb4b0f5af386c22b1bc35083a",
+      "bundleHash": "53d52d53190292c4ad175585de928a6ba359192feee1a152b33ec4dbdd0f79b9",
+      "finalization": {
+        "hash": "0x8e3d76effc337da339ae8a60cd02ec6d968d8898f6e7608ed29dad280342f529",
+        "method": "finalize"
+      },
+      "passed": true
+    },
+    {
+      "check": "rehashed-forgery-rejected-by-live-chain",
+      "eventId": "2",
+      "errorCode": "CHAIN_MISMATCH",
+      "passed": true
+    },
+    {
+      "check": "wrong-event-finalization-rejected-live",
+      "errorCode": "WRONG_EVENT",
+      "passed": true
+    },
+    {
+      "check": "export-and-independent-RPC-recheck",
+      "eventId": "1",
+      "resolution": "UNRESOLVED",
+      "recordHash": "52351f76feefc436a8e83ef7ba1da0b26e0b4058ad697b97ddd56ef1407d2ee4",
+      "bundleHash": "b041a119872678e5942c8f5357366b26fbecb7e00e38d940c2e45bb470119036",
+      "finalization": {
+        "hash": "0x46b49af1c98208dd713f3ddc7a03bec89f8b419e7c3ac0f06e5d5825479054cb",
+        "method": "finalize"
+      },
+      "passed": true
+    },
+    {
+      "check": "unresolved-decision-guard",
+      "errorCode": "UNRESOLVED",
+      "passed": true
+    },
+    {
+      "check": "StudioNet-finalization-discovery",
+      "eventId": "2",
+      "hash": "0x8e3d76effc337da339ae8a60cd02ec6d968d8898f6e7608ed29dad280342f529",
+      "passed": true
+    }
+  ],
+  "finishedAt": "2026-10-22T08:10:23.987Z",
+  "passed": true
+}

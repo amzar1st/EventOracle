@@ -1,0 +1,11 @@
+{
+  "name": "eventoracle-client",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Read finalized EventOracle resolutions and independently recheck portable evidence bundles against StudioNet",
+  "exports": {".": "./index.js", "./receipt": "./receipt.js"},
+  "files": ["index.js", "receipt.js", "README.md"],
+  "dependencies": {"@noble/hashes": "1.8.0"},
+  "peerDependencies": {"genlayer-js": "1.1.8"},
+  "engines": {"node": ">=22"}
+}

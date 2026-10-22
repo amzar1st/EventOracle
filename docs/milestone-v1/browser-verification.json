@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-22",
+  "environment": "Managed browser preview at http://terminal.local:4173/ using real StudioNet RPC",
+  "checks": [
+    {
+      "check": "default deployment loads two live events",
+      "passed": true
+    },
+    {
+      "check": "Load live YES example exports event 2",
+      "passed": true,
+      "recordHash": "62e105e672f7259cfa1aba7bb231292d493b3acfb4b0f5af386c22b1bc35083a"
+    },
+    {
+      "check": "Recheck on StudioNet",
+      "passed": true,
+      "visibleResult": "Verified against StudioNet \u00b7 event 2 \u00b7 YES \u00b7 source, record and receipt match."
+    },
+    {
+      "check": "edited question with unchanged digests rejected",
+      "passed": true,
+      "visibleResult": "TAMPERED_BUNDLE: Bundle content or digest changed"
+    }
+  ],
+  "limitations": [
+    "Browser file chooser stalled and browser session was lost; native file upload and download were not completed in browser QA.",
+    "Paste/export/live recheck were observed in preview; production deployment is verified separately through the hosting service.",
+    "No browser screenshot was recovered.",
+    "The existing MetaMask signing limitation is unchanged."
+  ]
+}

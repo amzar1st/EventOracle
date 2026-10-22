@@ -1,0 +1,56 @@
+{
+  "format": "eventoracle-resolution/v1",
+  "chainId": 61999,
+  "contract": "0xea6703e6508d61a86ce904e87bae448880bb5e5c",
+  "eventId": "2",
+  "sourceSha256": "bb13b4c1278f211256473eeedbe5fca68818cf821637a17ce00a030b0d2a8ee9",
+  "resolution": "YES",
+  "record": {
+    "challenge": null,
+    "challenge_seconds": 60,
+    "challenge_until": 1792555016,
+    "challenged": false,
+    "creator": "0x981F173A0d46C4Bb1BC72B01da22dF888ed35956",
+    "criteria": "Use the official genlayerlabs/genlayer-js changelog pinned to commit 4303db00c428d57c6d8e5b04a75043ea42d4b0e7. YES requires an explicit version 1.1.8 heading dated 2026-05-06, which is before the event cutoff. NO requires an explicit different date for that exact version. Missing or invalid evidence is UNRESOLVED. This assesses the published changelog date, not independent proof of package distribution.",
+    "deadline": 1792554927,
+    "expires": 1793764527,
+    "finalized_at": 1792555178,
+    "history": [
+      {
+        "at": 1792554956,
+        "result": {
+          "conflict": false,
+          "outcome": "YES",
+          "sources": [
+            {
+              "fingerprint": "c4786d51a77b9d65262642a80e51098a5b840e89be123f4811ee0b352dbca531",
+              "quote": "## 1.1.8 (2026-05-06)",
+              "reason": "The provided changelog excerpt, which is from the official genlayerlabs/genlayer-js repository pinned to commit 4303db00c428d57c6d8e5b04a75043ea42d4b0e7, contains an explicit heading for version 1.1.8 with the date \"2026-05-06\". This matches the required criteria for a YES vote: an explicit version 1.1.8 heading dated 2026-05-06, confirming that the official changelog dates the release to May 6, 2026.",
+              "status": "VALID",
+              "url": "https://raw.githubusercontent.com/genlayerlabs/genlayer-js/4303db00c428d57c6d8e5b04a75043ea42d4b0e7/CHANGELOG.md",
+              "vote": "YES"
+            }
+          ]
+        }
+      }
+    ],
+    "id": "2",
+    "outcome": "YES",
+    "question": "Does the official GenLayerJS v1.1.8 changelog date its release to May 6, 2026?",
+    "review_after": 1792554927,
+    "sources": [
+      {
+        "sha256": "",
+        "url": "https://raw.githubusercontent.com/genlayerlabs/genlayer-js/4303db00c428d57c6d8e5b04a75043ea42d4b0e7/CHANGELOG.md"
+      }
+    ],
+    "state": "FINAL"
+  },
+  "recordHash": "62e105e672f7259cfa1aba7bb231292d493b3acfb4b0f5af386c22b1bc35083a",
+  "finalization": {
+    "hash": "0x8e3d76effc337da339ae8a60cd02ec6d968d8898f6e7608ed29dad280342f529",
+    "method": "finalize"
+  },
+  "exportedAt": "2026-10-22T08:10:08.575Z",
+  "bundleHash": "53d52d53190292c4ad175585de928a6ba359192feee1a152b33ec4dbdd0f79b9"
+}

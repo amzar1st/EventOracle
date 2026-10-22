@@ -1,0 +1,91 @@
+{
+  "format": "eventoracle-resolution/v1",
+  "chainId": 61999,
+  "contract": "0xea6703e6508d61a86ce904e87bae448880bb5e5c",
+  "eventId": "1",
+  "sourceSha256": "bb13b4c1278f211256473eeedbe5fca68818cf821637a17ce00a030b0d2a8ee9",
+  "resolution": "UNRESOLVED",
+  "record": {
+    "challenge": {
+      "at": 1792554826,
+      "by": "0x981F173A0d46C4Bb1BC72B01da22dF888ed35956",
+      "reason": "The initial source was unavailable to validators. Re-evaluate using the official numeric release endpoint, which independently identifies the same release and its dated publication metadata.",
+      "sources": [
+        {
+          "sha256": "",
+          "url": "https://api.github.com/repos/genlayerlabs/genlayer-js/releases/318683025"
+        }
+      ]
+    },
+    "challenge_seconds": 300,
+    "challenge_until": 1792555213,
+    "challenged": true,
+    "creator": "0x981F173A0d46C4Bb1BC72B01da22dF888ed35956",
+    "criteria": "Resolve YES only if official genlayerlabs/genlayer-js GitHub metadata identifies tag_name v1.1.8, draft false, prerelease false, and a published_at timestamp before the event cutoff. NO requires direct dated disproof. Missing, invalid, or unavailable evidence is UNRESOLVED.",
+    "deadline": 1792554693,
+    "expires": 1793159686,
+    "finalized_at": 1792555274,
+    "history": [
+      {
+        "at": 1792554720,
+        "result": {
+          "conflict": false,
+          "outcome": "UNRESOLVED",
+          "sources": [
+            {
+              "fingerprint": "",
+              "quote": "",
+              "reason": "Unavailable, invalid commitment, oversized content, or invalid assessment",
+              "status": "INVALID",
+              "url": "https://api.github.com/repos/genlayerlabs/genlayer-js/releases/tags/v1.1.8",
+              "vote": "UNRESOLVED"
+            }
+          ]
+        }
+      },
+      {
+        "at": 1792554913,
+        "result": {
+          "conflict": false,
+          "outcome": "UNRESOLVED",
+          "sources": [
+            {
+              "fingerprint": "",
+              "quote": "",
+              "reason": "Unavailable, invalid commitment, oversized content, or invalid assessment",
+              "status": "INVALID",
+              "url": "https://api.github.com/repos/genlayerlabs/genlayer-js/releases/tags/v1.1.8",
+              "vote": "UNRESOLVED"
+            },
+            {
+              "fingerprint": "",
+              "quote": "",
+              "reason": "Unavailable, invalid commitment, oversized content, or invalid assessment",
+              "status": "INVALID",
+              "url": "https://api.github.com/repos/genlayerlabs/genlayer-js/releases/318683025",
+              "vote": "UNRESOLVED"
+            }
+          ]
+        }
+      }
+    ],
+    "id": "1",
+    "outcome": "UNRESOLVED",
+    "question": "Was GenLayerJS v1.1.8 publicly released before the event cutoff?",
+    "review_after": 1792554886,
+    "sources": [
+      {
+        "sha256": "",
+        "url": "https://api.github.com/repos/genlayerlabs/genlayer-js/releases/tags/v1.1.8"
+      }
+    ],
+    "state": "FINAL"
+  },
+  "recordHash": "52351f76feefc436a8e83ef7ba1da0b26e0b4058ad697b97ddd56ef1407d2ee4",
+  "finalization": {
+    "hash": "0x46b49af1c98208dd713f3ddc7a03bec89f8b419e7c3ac0f06e5d5825479054cb",
+    "method": "finalize"
+  },
+  "exportedAt": "2026-10-22T08:10:18.761Z",
+  "bundleHash": "b041a119872678e5942c8f5357366b26fbecb7e00e38d940c2e45bb470119036"
+}

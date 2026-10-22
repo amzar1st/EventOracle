@@ -1,0 +1,36 @@
+[
+  {
+    "id": "eventoracle-client@0.1.0",
+    "name": "eventoracle-client",
+    "version": "0.1.0",
+    "size": 6540,
+    "unpackedSize": 17783,
+    "shasum": "8e9a9afc614756fed335c1daad68a04f2cdaa001",
+    "integrity": "sha512-/KHW7r+dir6AxumKLUKVF07a69FkSh6Pm9wfYz67iwjF2+O28o1wGlD62J5KfEknEslDVWdK+k6KlkdsMwadAQ==",
+    "filename": "eventoracle-client-0.1.0.tgz",
+    "files": [
+      {
+        "path": "README.md",
+        "size": 5436,
+        "mode": 420
+      },
+      {
+        "path": "index.js",
+        "size": 10803,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 446,
+        "mode": 420
+      },
+      {
+        "path": "receipt.js",
+        "size": 1098,
+        "mode": 420
+      }
+    ],
+    "entryCount": 4,
+    "bundled": []
+  }
+]
